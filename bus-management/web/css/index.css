@@ -1,0 +1,257 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 Feb, 2019, 2:29:02 AM
+    Author     : winayak
+*/
+body{
+    font-family: monospace;
+}
+.jumbotron{
+    background-color: #333!important;
+    border-radius: 0px!important;
+    overflow: hidden;
+    margin: 0px!important;
+}
+.jumbotron p{
+    color: white;    
+    width: 100%;
+    float: left;
+    text-align: right;
+}
+.jumbotron img{
+    width: 100%;
+}
+#left{
+    width: 50%;
+    float: left;
+    border-right: 1px solid #505050;
+    padding-right: 20px;
+}
+#right{
+    width: 50%;
+    float: left;
+    text-align: left;
+    padding-left: 20px;
+}
+main{
+    background: gainsboro;
+}
+#main0 h3{
+    padding: 10px 15px;
+}
+#main2,#main3{
+    display: none;
+}
+#main0>div,#main1>div,#main2>div,#main3>div,.data>div{
+    height: 100%;
+    color: #333;
+}
+.data>div{
+    float: left;
+}
+.table{
+    text-align: center;
+}
+#search .input-group,#search .form-group{
+    width: 30%!important;
+    float: right;
+}
+.form-group{
+    margin-right: 10px;
+}
+input:focus,select:focus{
+    border: 0px;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(222, 147, 124, 0.61)!important;
+    border-color: #f7a397!important;
+}
+#myModal .modal-footer button,#myModal2 .modal-footer button,#myModal3 .modal-footer button{
+    background: #d08080!important;
+    border: 1px solid #A26464!important;
+    outline: 0!important;
+    box-shadow: none!important;
+    border: 0px;
+}
+footer{
+    padding: 4rem 2rem;
+    background-color: #333!important;
+    border-radius: 0px!important;
+    color: #fff;
+    clear: both;
+    margin: 0px!important;
+    text-align: center;
+}
+#data,#profile{
+    float: left;
+}
+#data>div div{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+#profile{
+    text-align: center;
+    float: right!important;
+}
+#profile img{
+    width: 152px;
+    height: 152px;
+    object-fit: cover;
+}
+#sidebar{
+    float: left;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background: #969696;
+}
+#sidebar h3{
+    color: #fff;
+}
+#sidebar a{
+    width: 100%;
+    padding: 10px 10px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+#sidebar a:hover{
+    color: #757575;
+    background: #d2d2d2;
+}
+main{
+    width: 100%;
+    float: right;
+    background: #e6e6e6;
+}
+#profile,#data,#search,#main1,#main2,#main3,#map,#alert{
+    float: left;
+    margin: 20px 0px;
+}
+#map>div{
+    width: 100%;
+    height: 400px;
+}
+#alert>div{
+    height: 400px;
+    overflow-y: scroll;
+}
+#alert h3>span{
+    float: right;
+    color: #fff;
+    padding: 0px 5px;
+    border-radius: 5px;
+    background: #b7b7b7;
+}
+#alert p>span{
+    float: right;
+    color: #8c8c8c;
+}
+#alert>div::-webkit-scrollbar {
+  width: 5px;
+  background-color: #aaa;
+}
+
+#alert>div::-webkit-scrollbar-thumb {
+    background: #666; 
+}
+#profile>div,#data>div,#search>div,#main1>div,#main2>div,#main3>div,#alert>div,#map>div{
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #bdbdbd;
+}
+#data>div{
+    float: left;
+    width: 100%;
+}
+#data p{
+    padding-top: 15px;
+    margin: 0px;
+}
+#data i{
+    color: #bb6c64;
+}
+#profile p{
+    padding-top: 10px;
+}
+#main1 h3,#main2 h3,#main3 h3{
+    display: block;
+    margin-bottom: 15px;
+}
+#search h3{
+    display: inline;
+}
+#profile>div:hover{
+    opacity: 0.7;
+}
+#staff:hover i,#students:hover i,#buses:hover i{
+    opacity: 0.7;
+}
+#search .form-control{
+    background: #d2d2d2!important;
+    color: #fff!important;
+}
+#search .form-control::placeholder{
+    color: #fff!important;
+}
+#search .input-group span{
+    color: #fff!important;
+    border: 1px solid #c3c3c3!important;
+    background: #c3c3c3!important;
+}
+#route_inp,#time_inp{
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+    margin-right: 0;
+}
+#route_inp>input,#time_inp>input{
+    margin-bottom: 10px;
+}
+@media only screen and (min-width:768px){
+    .jumbotron h1{
+        float: right;
+        display: block;
+        width: 213px;
+    }
+    #right i{
+        font-size: 50px;
+        padding: 34px 0px;
+        color: #fff;
+    }
+    #right span:not(:first-child){
+        font-size: 50px;
+        color: #fff;
+        padding: 34px 15px;
+    }
+}
+@media only screen and (max-width:768px){
+    .jumbotron h1{
+        float: right;
+        display: block;
+        width: 100px;
+    }
+    #right i{
+        font-size: 20px;
+        padding: 38px 0px;
+        color: #fff;
+    }
+    #main1>div,#main2>div,#main3>div{
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+    #right span:not(:first-child){
+        font-size: 20px;
+        color: #fff;
+        padding: 38px 15px;
+    }
+    .jumbotron p{
+        font-size: 12px;
+    }
+}
+
